@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Validation_Form</title>
     <link rel="stylesheet" href="style.css" />
-    <script></script>
+    <script src="index.js"></script>
   </head>
   <body>
     <div class="container">
@@ -13,29 +13,63 @@
       <h4>Please fill in this form to create an account!</h4>
       <div class="line"></div>
 
-      <form action="" onsubmit="" method="POST">
+      <form id="run">
         <input
           class="form_1"
           type="text"
-          name="Firstname"
+          name="Fname"
           placeholder="First name"
           id="Fname"
         />
         <input
           class="form_1"
           type="text"
-          name="Lastname"
+          name="Lname"
           placeholder="Last Name"
-          id="Fname"
+          id="Lname"
         />
         <br />
         <input
           class="emailid"
-          type="text"
+          type="email"
           name="email"
           placeholder="email"
           id="email"
         />
+        <br />
+        <input
+          class="emailid"
+          type="password"
+          name="password"
+          placeholder="password"
+          id="password"
+        />
+        <br />
+        <input
+          class="emailid"
+          type="password"
+          name="cpassword"
+          placeholder="confirm password"
+          id="cpassword"
+        />
+        <br />
+        <div class="check">
+          <input class="tick" type="checkbox" id="tick" />
+          <span
+            >I agree the <color class="dis">Terms of use</color> &
+            <color class="dis">conditions</color>
+          </span>
+        </div>
+        <!--<input
+          class="come"
+          type="submit"
+          name="submit"
+          value="Sign Up"
+          onclick="myFunction"
+        />-->
+        <button class="come" value="send" id="submit" onclick="myFunction()">
+          Sign Up
+        </button>
       </form>
     </div>
   </body>
